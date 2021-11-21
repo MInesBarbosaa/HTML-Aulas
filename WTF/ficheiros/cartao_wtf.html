@@ -3,9 +3,93 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<style>
+        body {
+        font-family: Calibri;
+        }
+        h1 {
+        font-family: Calibri;
+        color: #ff3399;
+        }
+        h4 {
+        font-family: Calibri;
+        color: #ff3399;
+        }
+    </style>
+     
+	<title>Cartao WTF</title>
 </head>
 <body>
+
+	<h1>Adesão Cartão WTF</h1>
+
+	<form style="width=70%;">
+
+		<fieldset>
+			<legend>Dados Pessoais:</legend>
+
+			<label for="Nome">Nome:</label>
+			<input type="text" name="Nome" maxlength="100">
+			<br>
+			<br>
+			<label for="radio">Sexo:</label>
+			<input type="radio" name="Masculino" value="Masculino" checked>
+			<label for="Masculino">Masculino</label>
+			<input type="radio" name="Feminino" value="Feminino">
+			<label for="Feminino">Feminino</label>
+			<br>
+			<br>
+			<label for="Nascimento">Data de Nascimento:</label>
+			<input type="date" name="Nascimento">
+			<br>
+			<br>
+			<label for="EstadoCivil">Estado Civil:</label>
+			<select name="EstadoCivil">
+				<option value="Opçao" disabled selected>Escolha uma opção</option>
+				<option value="Casado">Casado</option>
+				<option value="Solteiro">Solteiro</option>
+				<option value="Divorciado">Divorciado</option>
+				<option value="Viuvo">Viúvo</option>
+			</select>
+			<label for="Filhos">Nr de filhos:</label>
+			<input type="number" name="Filhos" min="0" max="5">
+		</fieldset>
+		<fieldset>
+			<legend>Contactos:</legend>
+
+			<label for="Postal">Código-Postal:</label>
+			<input type="number" name="Postal">
+			-
+			<input type="number" name="Postal">
+			<br>
+			<br>
+			<label for="Morada">Morada:</label> <br>
+			<textarea name="Morada" rows="5" cols="106"></textarea>
+			<br>
+			<br>
+			<label for="Email">Email:</label>
+			<input type="Email" name="Email">
+			<br>
+			<br>
+			<label for="Pass">Password:</label>
+			<input type="Password" name="Pass">
+		</fieldset>
+
+		<div style="text-align: right;">
+			<label for="Email" >Pretendo ser contactado através de:</label>
+			<input type="checkbox" name="Email">
+			<label for="Email">Email</label>
+			<input type="checkbox" name="Telemovel">
+			<label for="Telemovel">Telemóvel</label>
+			<input type="checkbox" name="Correio">
+			<label for="Correio">Correio</label>			
+		</div>
+		<div style="text-align: right;">
+			<input type="reset" value="Limpar">
+			<input type="submit" value="Confirmar">
+		</div>
+			
+	</form>
 
 </body>
 </html>
