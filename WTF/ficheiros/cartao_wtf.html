@@ -26,7 +26,7 @@
 	<form style="width=70%;">
 
 		<fieldset>
-			<legend>Dados Pessoais:</legend>
+			<legend><b>Dados Pessoais:</b></legend>
 
 			<label for="Nome">Nome:</label>
 			<input type="text" name="Nome" maxlength="100">
@@ -54,13 +54,15 @@
 			<label for="Filhos">Nr de filhos:</label>
 			<input type="number" name="Filhos" min="0" max="5">
 		</fieldset>
+		<br>
+		<br>
 		<fieldset>
-			<legend>Contactos:</legend>
+			<legend><b>Contactos:</b></legend>
 
 			<label for="Postal">Código-Postal:</label>
-			<input type="number" name="Postal">
+			<input type="number" name="Postal" placeholder="0000" maxlength="9999">
 			-
-			<input type="number" name="Postal">
+			<input type="number" name="Postal" placeholder="000" maxlength="999">
 			<br>
 			<br>
 			<label for="Morada">Morada:</label> <br>
