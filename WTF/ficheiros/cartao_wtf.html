@@ -4,94 +4,110 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-        body {
-        font-family: Calibri;
-        }
-        h1 {
-        font-family: Calibri;
-        color: #ff3399;
-        }
-        h4 {
-        font-family: Calibri;
-        color: #ff3399;
-        }
-    </style>
-     
+		body {
+			font-family: Calibri;
+		}
+		h1 {
+			font-family: Calibri;
+			color: #ff3399;
+		}
+		h4 {
+			font-family: Calibri;
+			color: #ff3399;
+		}
+	</style>
+
 	<title>Cartao WTF</title>
 </head>
 <body>
 
+	<a href="https://www.wtf.pt" target="_blank"><img src="../imagens/logo.jpeg" width="500" height="100"></a>
+	<br>
+	<a href="../index.html">Tarifários</a>
+	<a href="cinemas.html">Cinemas</a>
+	<a href="apps.html">Apps</a>
+
+	<hr>
+
 	<h1>Adesão Cartão WTF</h1>
 
-	<form style="width=70%;">
+	<div style="width: 70%;">
 
-		<fieldset>
-			<legend><b>Dados Pessoais:</b></legend>
+		<form>
+			<div style="width: fit-content;">
+				<fieldset>
+					<legend><b>Dados Pessoais:</b></legend>
 
-			<label for="Nome">Nome:</label>
-			<input type="text" name="Nome" maxlength="100">
-			<br>
-			<br>
-			<label for="radio">Sexo:</label>
-			<input type="radio" name="Masculino" value="Masculino" checked>
-			<label for="Masculino">Masculino</label>
-			<input type="radio" name="Feminino" value="Feminino">
-			<label for="Feminino">Feminino</label>
-			<br>
-			<br>
-			<label for="Nascimento">Data de Nascimento:</label>
-			<input type="date" name="Nascimento">
-			<br>
-			<br>
-			<label for="EstadoCivil">Estado Civil:</label>
-			<select name="EstadoCivil">
-				<option value="Opçao" disabled selected>Escolha uma opção</option>
-				<option value="Casado">Casado</option>
-				<option value="Solteiro">Solteiro</option>
-				<option value="Divorciado">Divorciado</option>
-				<option value="Viuvo">Viúvo</option>
-			</select>
-			<label for="Filhos">Nr de filhos:</label>
-			<input type="number" name="Filhos" min="0" max="5">
-		</fieldset>
-		<br>
-		<br>
-		<fieldset>
-			<legend><b>Contactos:</b></legend>
+					<label for="Nome">Nome:</label>
+					<input type="text" name="Nome" size="100">
+					<br>
+					<br>
+					<label for="radio">Sexo:</label>
+					<input type="radio" name="Masculino" value="Masculino" checked>
+					<label for="Masculino">Masculino</label>
+					<input type="radio" name="Feminino" value="Feminino">
+					<label for="Feminino">Feminino</label>
+					<br>
+					<br>
+					<label for="Nascimento">Data de Nascimento:</label>
+					<input type="date" name="Nascimento">
+					<br>
+					<br>
+					<label for="EstadoCivil">Estado Civil:</label>
+					<select name="EstadoCivil">
+						<option value="Opçao" disabled selected>Escolha uma opção</option>
+						<option value="Casado">Casado</option>
+						<option value="Solteiro">Solteiro</option>
+						<option value="Divorciado">Divorciado</option>
+						<option value="Viuvo">Viúvo</option>
+					</select>
+					<label for="Filhos">Nr de filhos:</label>
+					<input type="number" name="Filhos" min="0" max="5">
+				</fieldset>
 
-			<label for="Postal">Código-Postal:</label>
-			<input type="number" name="Postal" placeholder="0000" maxlength="9999">
-			-
-			<input type="number" name="Postal" placeholder="000" maxlength="999">
-			<br>
-			<br>
-			<label for="Morada">Morada:</label> <br>
-			<textarea name="Morada" rows="5" cols="106"></textarea>
-			<br>
-			<br>
-			<label for="Email">Email:</label>
-			<input type="Email" name="Email">
-			<br>
-			<br>
-			<label for="Pass">Password:</label>
-			<input type="Password" name="Pass">
-		</fieldset>
+			</div>
 
-		<div style="text-align: right;">
-			<label for="Email" >Pretendo ser contactado através de:</label>
-			<input type="checkbox" name="Email">
-			<label for="Email">Email</label>
-			<input type="checkbox" name="Telemovel">
-			<label for="Telemovel">Telemóvel</label>
-			<input type="checkbox" name="Correio">
-			<label for="Correio">Correio</label>			
-		</div>
-		<div style="text-align: right;">
-			<input type="reset" value="Limpar">
-			<input type="submit" value="Confirmar">
-		</div>
+
+			<br>
+			<br>
+			<fieldset>
+				<legend><b>Contactos:</b></legend>
+
+				<label for="Postal">Código-Postal:</label>
+				<a href="#" data-mdb-toggle="tooltip" title="Insira quatro algarismos para o indicativo."><input type="number" name="Postal" placeholder="0000" max="9999"></a>
+				-
+				<a href="#" data-mdb-toggle="tooltip" title="Insira três algarismos para a extensão."><input type="number" name="Postal" placeholder="000" max="999"></a>
+
+				<br>
+				<br>
+				<label for="Morada">Morada:</label> <br>
+				<textarea name="Morada" rows="5" cols="106"></textarea>
+				<br>
+				<br>
+				<label for="Email">Email:</label>
+				<input type="Email" name="Email">
+				<br>
+				<br>
+				<label for="Pass">Password:</label>
+				<input type="Password" name="Pass">
+			</fieldset>
+
+			<div style="text-align: right;">
+				<label for="Email" >Pretendo ser contactado através de:</label>
+				<input type="checkbox" name="Email" placeholder="ex:alguem@gmail.com">
+				<label for="Email">Email</label>
+				<input type="checkbox" name="Telemovel">
+				<label for="Telemovel">Telemóvel</label>
+				<input type="checkbox" name="Correio">
+				<label for="Correio">Correio</label>			
+			</div>
+			<div style="text-align: right;">
+				<input type="reset" value="Limpar">
+				<input type="submit" value="Confirmar">
+			</div>
 			
-	</form>
+		</form>
+	</div>
 
 </body>
 </html>
