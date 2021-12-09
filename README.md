@@ -11,6 +11,6 @@
 A basic website HTML/CSS starter. 
 <br />
 
-← `index.html`: This is the main HTML page for the site.
+← `index.html`: This is the main HTML page of the site.
 
 <br />
